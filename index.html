@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <style>
+ 
+        </style>
+    </head>
+    <body>
+
+
+<!-- Navigation -->
+<nav class="w3-bar" style="background-color:#96858F; color:white">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#band" class="w3-button w3-bar-item">Band</a>
+  <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="download.jpg"
+  style="width:100%">
+  <img class="mySlides" src="The-Great-Awakening-And-Enlightenment-In-Colonial-America.jpg"
+  style="width:100%">
+  <img class="mySlides" src="img_band_chicago.jpg"
+  style="width:100%">
+</section>
+
+<!-- History -->
+<section class="w3-container w3-center w3-content" style="max-width:600px; background-color">
+  <h2 class="w3-wide">THE GREAT AWAKENING</h2>
+  <p class="w3-opacity"><i>To preach more than half an hour, a man should be an angel himself or have angels for hearers.<br> - George Whitefield</i></p>
+  <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+<!-- Important people/events -->
+<section class="w3-row-padding w3-center" style="background-color: #D5D5D5">
+  <article class="w3-third">
+    <h3>George Whitefield</h3>
+        <div class="img-circular circle img-george"></div>
+  </article>
+  <article class="w3-third">
+    <p>Paul</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>Paul is the prettiest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Ringo</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>Ringo is the funniest.</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center " style="background-color:#9099A2">
+  
+ 
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+        
+    </body>
+</html>
