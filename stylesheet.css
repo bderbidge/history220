@@ -51,5 +51,16 @@
 }     
     
 .img-george{
-    background-image: url('https://www-tc.pbs.org/godinamerica/art/pgeorge-whitefield.jpg'); 
+    background-image: url('http://etc.usf.edu/clipart/57700/57700/57700_whitefield_lg.gif'); 
+}
+
+.img-john{
+    
+    background-image: url('http://www.jesus-is-savior.com/Books,%20Tracts%20&%20Preaching/Printed%20Sermons/Jonathan_Edwards/jonathan_edwards.jpg')
+}
+
+
+.img-will{
+    
+    background-image: url('http://cyberhymnal.org/img/d/a/davies_s.jpg')
 }

@@ -3,9 +3,9 @@
     <head>
         
         <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -16,50 +16,188 @@
 
 
 <!-- Navigation -->
-<nav class="w3-bar" style="background-color:#96858F; color:white">
-  <a href="#home" class="w3-button w3-bar-item">Home</a>
-  <a href="#band" class="w3-button w3-bar-item">Band</a>
-  <a href="#tour" class="w3-button w3-bar-item">Tour</a>
-  <a href="#contact" class="w3-button w3-bar-item">Contact</a> 
-</nav>
+        <nav class="w3-bar" style="background-color:#96858F; color:white">
+            <a href="#home" class="w3-button w3-bar-item">Home</a>
+            <a href="#contact" class="w3-button w3-bar-item">Contact</a> 
+        </nav>
 
 <!-- Slide Show -->
 <section>
-  <img class="mySlides" src="thegreatawakening1.png"
-  style="height:500px ;width:100%;">
-  <img class="mySlides" src="The-Great-Awakening-And-Enlightenment-In-Colonial-America.jpg"
-  style="width:100%; height: 500px">
-  <img class="mySlides" src="download.jpg"
-  style="width:100%; height:500px">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img class="mySlides" src="thegreatawakening1.png" style="height: 67vh;width:100%;">
+      </div>
+
+      <div class="item">
+        <img class="mySlides" src="The-Great-Awakening-And-Enlightenment-In-Colonial-America.jpg" style="width:100%; height: 67vh;">
+      </div>
+    
+      <div class="item">
+        <img class="mySlides" src="download.jpg" style="width:100%; height: 67vh;">
+      </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
 </section>
+    
 
 <!-- History -->
 <section class="w3-container w3-center w3-content" style="max-width:600px; background-color">
   <h2 class="w3-wide">THE GREAT AWAKENING</h2>
   <p class="w3-opacity"><i>To preach more than half an hour, a man should be an angel himself or have angels for hearers.<br> - George Whitefield</i></p>
-  <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    
+  <p class="w3-justify">Of the many themes and events that have occurred in American History, few have had such a profound effect as the First Great Awakening had upon the American society in the 1730s. Religion was central to the lives of those who lived in eighteenth-century America and yet with the expansion of the ideas of enlightenment, and the increased discussion of liberty and politics, there were many preachers who were concerned that these discussions were contributing to the decrease in church attendance and the undermining of religious devotion. From these concerns sprouted a series of revivals that soon swept through the colonies and instigated what we now call the First Great Awakening. 
+
+      
+  <br><br> The Great Awakening not only sought to bring souls closer to Christ and reclaim them from sin, but also helped shape and encourage the emergence of many different churches. This in turn reshaped the religious landscape of the New England colonies at that time. Therefore, to better understand the First Great Awakening, this website will examine three preachers who contributed to Great Awakening through their sermons and revivals and discuss how their teaching affected the religious landscape and society of America at that time. To learn more about them click on their picture. 
+<br><br>
+      
+      <br>
+      <br>
+</p>
 </section>
 
 <!-- Important people/events -->
 <section class="w3-row-padding w3-center" style="background-color: #D5D5D5">
-  <article class="w3-third This">
-    <h3>George Whitefield</h3>
-        <div class="img-circular circle img-george"></div>
+  <article class="w3-third">
+      <div class="This"> 
+    <h3 >George Whitefield</h3>
+          <div  data-toggle="modal" data-target="#myModal" class="img-circular circle img-george"></div></div>
+ <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title" style="font-family: Brush Script MT, cursive; font-size: 44px;">George Whitefield</h2>
+        </div>
+        <div class="modal-body">
+           
+  <article class="w3-half text-left">
+   
+      <p>
+George Whitefield was born in Gloucester England on December 27, 1714. At an early age, young Whitefield found that he had a passion and talent for acting that would later assist him in his preaching career. He attended Oxford but because he could not pay for his tuition he attended as a servitor where he was granted free tuition in exchange for acting as a servant to the students there. It was about this time that Whitefield had his own religious conversion. While reading books provided to him by his friend Charles Wesley, Whitefield came to the realization that for him to make his life right with God and experienced a spiritual rebirth. Because of this rebirth, Whitefield became passionate in his preaching and came to America in 1739 with his own brand of preaching. 
+<br><br>
+Beginning in Philadelphia, Whitefield used the skills he had acquired as a child and through his appeal to emotion in his preaching he presented a doctrine different from the widely-accepted Calvinistic doctrine being taught at that time. He taught that God was merciful and as Foner states, “Rather than being predestined for damnation, men and women could save themselves by repenting of their sins.” His preaching caused a great stir and several different newspapers followed him throughout his time preaching in America. Of his preaching, Cornelius Winter said, “It would be only by hearing him, and by beholding his attitude and his tears, that a person could well conceive of the effect… He had a most peculiar art of speaking personally to you, in a congregation of four thousand people” 
+<br><br>
+Whitefield soon became frustrated with several of the churches and began to preach outdoors where several thousand people came to listen to his sermons. Because he did not preach in a specific church, he was able to cross religious lines and through his use of print media his fame and popularity grew with each passing day. - This type of preaching caused tens of thousands of colonists to attend Whitefield’s sermons and gave Whitefield the title as America’s first celebrity. He continued his preaching until his death in 1770, and of his passing Thomas Kidd states, “Word spread quickly through the colonies and Britain of the itinerant’s passing. Cornelius Winter, who had remained at Bethesda while Whitefield went north, wrote, ‘You have no conception of the effect of Mr. Whitefield’s death upon the inhabitants of the province of Georgia’, noting that ‘all the black cloth in the stores was bought’ to drape the churches for mourning”. As we can see from Kidd’s writings, not only was George Whitefield able to amass great fame, but he also left a legacy and impact that preachers would try to imitate for years to come. 
+
+<br><br>
+</p>
+      
   </article>
-  <article class="w3-third This">
-    <p>Paul</p>
-    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
-    <p>Paul is the prettiest.</p>
+            
+  <article class="w3-half ">
+    <img src='http://religionnews.com/wp-content/uploads/2014/12/GeorgeWhitefield_ca1750s_attrib_JosephBadger_Harvard.png' height="10%" width="90%">
+
   </article>
-  <article class="w3-third This">
-    <p>Ringo</p>
-    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
-    <p>Ringo is the funniest.</p>
+          
+        </div>
+          <div class="clearfix"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  </article>
+    
+  <article class="w3-third">
+      <div class="This"> 
+      <h3 >Jonathan Edwards</h3>
+        <div  data-toggle="modal" data-target="#myModal2" class="img-circular circle img-john"></div> </div>
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title" style="font-family: Brush Script MT, cursive; font-size: 44px;">Jonathan  Edwards</h2>
+                    </div>
+                    <div class="modal-body ">
+           
+                        <article class="w3-half text-left">
+                            <p>Ringo</p>
+                            <p>Ringo is the funniest.</p>
+                        </article>
+                        <article class="w3-half ">
+                            <p>Ringo</p>
+                            <p>This is a large modal.</p>
+                        </article>   
+                    </div>
+                    <div class="clearfix"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+           
+  </article>
+  <article class="w3-third ">
+   <div class="This">     
+      <h3 >Samuel Davies</h3 >
+       <div  data-toggle="modal" data-target="#myModal3" class="img-circular circle img-will"></div> </div>
+  <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title" style="font-family: Brush Script MT, cursive; font-size: 44px;">Samuel Davies</h2>
+                    </div>
+                    <div class="modal-body ">
+           
+                        <article class="w3-half text-left">
+                            <p style="margin: 10px">Samuel Davies was born in New Castle County, Delaware, on November 3, 1723. His parents, David Davies and Martha Thomas Davies, lived in a farming community with other Baptists of Welsh descent. At age fifteen, he made a profession of faith and joined the Presbyterian Church where he received a classical and theological education at Fagg’s Manor, Pennsylvania, from the Rev. Samuel Blair, who John E. Skidmore calls “one of the great preachers of the First Great Awakening in the middle colonies.”1 In 1739 during his education at Fagg’s Manor, Davies experienced a type of spiritual awakening due to the state of the inhabitants of Chester County Pennsylvania whom, “he found them ignorant of any knowledge of saving faith in Christ.” Therefore, in 1747 Davies obtained his license to Newcastle Presbytery and was sent to Hanover, Virginia to preach to the congregations there.<br> <br>
+                           Before Davies arrived in Virginia, the people would gather together to read the sermons of preachers such as George Whitefield since there weren’t preachers readily available in the area to teach the people. Therefore, when Davies arrived the excitement spread and people would travel as far as 40 miles to hear him preach. The excitement was so great that over the next 12 years his small congregations would grow by the hundreds and he was dividing his time between at least eight different congregations. Then in 1759 he accepted a position as the President of what is now known as Princeton College. 
+                                <br>
+                                <br>
+                        Davies is remembered for being a great orator and his ability to teach the word of God with an unwavering commitment even when his teachings may have been considered old fashioned. In addition to bringing religious preaching to an area that had only read sermons due to the lack of preachers, he also participated in efforts to evangelize slaves in Virginia. This effort has come to be called, “the first sustained  proselytization of slaves” in the Virginia Colony and assisted in promoting the ideals of the Great Awakening among both the white and black population of Virginia at that time. 
+
+
+                            </p>
+                            
+                        </article>
+                        <article class="w3-half ">
+                            <img src='http://web4.encyclopediavirginia.org/resourcespace/filestore/1/1/1/1_54b3dec4400c536/1111pre_95383d483b11032.jpg' height="80%">
+                            
+                          <br>
+                            <br>
+                        </article>   
+                    </div>
+                    <div class="clearfix"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+   
   </article>
 </section>
 
+  
+
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center " style="background-color:#9099A2">
+<footer class="w3-container w3-padding-64 w3-center" style="background-color:#9099A2;">
   
  
 </footer>
@@ -69,28 +207,20 @@
     $(".BodyContainer").next().height($(".BodyContainer").height())
 $(window).scroll(function() {
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop < 60) {
-        $('article.This').css('opacity',0);
+    if (scrollTop < 300) {
+        $('div.This').css('opacity',0);
+        
     }
     else {
-        $('article.This').css('opacity',(scrollTop -50)/300);
+        $('div.This').css('opacity',(scrollTop -300)/350);
+        
     }
 }).scroll()
 // Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 3000);
-}
+$('.carousel').carousel({
+   interval: 4000
+  });
 </script>
         
     </body>
